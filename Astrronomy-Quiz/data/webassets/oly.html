@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="user-scalable=no,width=device-width" />
+
+	<title>Olympics Quiz</title>
+
+	<link rel="stylesheet"  href="jquery.mobile-1.1.0.css" />
+    <link rel="stylesheet"  href="jquery.mobile.structure-1.1.0.css" />
+    <link rel="stylesheet"  href="jquery.mobile.theme-1.1.0.css" />
+    
+    
+    <script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+    <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="jquery.mobile-1.1.0.js" type="text/javascript"></script>
+	<script src="local:///chrome/webworks.js" type="text/javascript"></script>
+    
+</head>
+<body> 
+
+<div data-role="page" id="home">
+	<div data-role="header" data-position="fixed">
+        <h1>Olympic Quiz</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h1>Menu</h1>
+       <a href="#start" data-role="button" data-icon="arrow-r" data-transition="flip">Start Quiz</a>
+       
+       <a href="#contact" data-role="button" data-icon="grid" data-transition="flip">Contact Us</a>
+       
+	</div><!-- /content -->
+
+    <div class="ui-footer ui-bar-a" data-position="fixed" data-role="footer">
+       <h4></h4>
+    </div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="start">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+           
+  
+<!--   <div data-role="content">	
+		
+		<ul data-role="listview">
+        <li><a href="#q1">Multiple Choice</a></li>
+			
+		</ul>   
+	</div>
+
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><
+</div>
+
+
+<div data-role="page" id="q1">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+--> 
+        <h1>Question 1</h1>
+        <a href="#q2" data-role="button" data-icon="arrow-r">Skip</a>
+    </div>
+	<div data-role="content">	
+		<p>How many gold medals did India's hockey team win in succession at the Olympics?</p>
+		<a href="#dq1" data-role="button" data-transition="pop" data-rel="dialog">4</a>
+		<a href="#q2" data-role="button" data-transition="flip" >6</a>
+		<a href="#dq1" data-role="button" data-transition="pop" data-rel="dialog">8</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq1">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: 6</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q2" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q2">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 2</h1>
+        <a href="#q3" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		 <p>Who was India's first individual Olympic medallist?</p>	
+			
+			<a href="#dq2" data-role="button" data-transition="pop" data-rel="dialog">Abhinav Bindra</a>
+			<a href="#dq2" data-role="button" data-transition="pop" data-rel="dialog">PT Usha</a>
+			<a href="#q3" data-role="button" data-transition="flip" >Norman Pritchard</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq2">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Norman Pritchard</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q3" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q3">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 3</h1>
+        <a href="#q4" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Who broke Larisa Latinyna’s record of 18 Olympic medals?</p>
+		<a href="#q4" data-role="button" data-transition="flip" >Michael Phelps</a>  
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog"><span> Ryan Lochte<br/></span></a>
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog">Larsen Jensen</a>
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog">Park Taehwan</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq3">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:Michael Phelps</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q4" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q4">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 4</h1>
+        <a href="#q5" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Who won bronze medal in men’s tennis singles in London Olympics 2012?</p>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Nicolas Almagro</a>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Max Mirnyi</a>
+		<a href="#q5" data-role="button" data-transition="flip" >Juan Martin del Potro</a>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Novak Djokovic</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq4">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Juan Martin del Potro</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q5" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q5">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 5</h1>
+        <a href="#q6" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>In which event did Rajyavardhan Singh Rathore win a silver medal at the 2004 Athens Olympics?</p>
+		<a href="#dq5" data-role="button" data-transition="pop" data-rel="dialog">Men's 10m Air Rifle</a>
+		<a href="#dq5" data-role="button" data-transition="pop" data-rel="dialog">Men's 25m Air Pistol</a>
+
+		<a href="#q6" data-role="button" data-transition="pop" >Men's Double Trap</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq5">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Men's Double Trap</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q6" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q6">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 6</h1>
+        <a href="#q7" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p> How many sporting events were included in the first Olympic games ?</p>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">10</a>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">22</a>
+		<a href="#q7" data-role="button" data-transition="flip">43</a>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">55</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq6">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: 43</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q7" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q7">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 7</h1>
+        <a href="#q8" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Which Country won the most number of Gold Medals in the first Olympic Games ?</p>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog">Germany</a>
+		<a href="#q8" data-role="button" data-transition="flip" >United States</a>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog">Greece</a>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog">Austalia</a>
+		
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq7">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: United States</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q8" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q8">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 8</h1>
+        <a href="#q9" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>In which year, the International Olympic Committee was estabilished ?</p>
+		<a href="#q9" data-role="button" data-transition="flip" >1894</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog">1821</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog">1849</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog">1875</a>
+			
+			
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq8">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: 1894 </h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q9" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q9">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 9</h1>
+        <a href="#q10" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>The Olympic Museum is in which country ?</p>
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog">Japan</a>
+			<a href="#q10" data-role="button" data-transition="flip" >Switzerland</a>
+			
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog">Germany</a>
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog">USA</a>
+			
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq9">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Switzerland</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q10" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q10">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 10</h1>
+        <a href="#d2q25" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Who founded the International Olympic Committee ?</p>
+			<a href="#dq10" data-role="button" data-transition="pop" data-rel="dialog">Pierre de Fortius</a>
+			<a href="#dq10" data-role="button" data-transition="pop" data-rel="dialog"> Citius de Coubertin</a>
+			<a href="#d2q25" data-role="button" data-transition="flip" >Pierre de Coubertin</a>			  
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq10">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Pierre de Coubertin</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="d2q25">
+	<div data-role="header" data-position="fixed">
+        <h1>Quiz Over</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>You have reached the End of the quiz</h3>
+		<p>Thanx for playing</p> 
+		<a href="#home" data-role="button" data-icon="home">Home</a>		
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="contact">
+	<div data-role="header" data-position="fixed">
+	<a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>harshit080@gmail.com</h1>
+    </div><!-- /header -->
+	<center><h4> you can contact us at </h4><b>harshit080@gmail.com</b><h4>for any kind of queries & feedback
+	<br><br>It will help us greatly in improving our App.</h4>
+	<center>
+</div>
+
+
+</body>
+</html>
+

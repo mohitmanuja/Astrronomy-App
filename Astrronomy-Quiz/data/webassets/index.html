@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="user-scalable=no,width=device-width" />
+
+	<title>Indian Cinema Quiz</title>
+
+	<link rel="stylesheet"  href="jquery.mobile-1.1.0.css" />
+    <link rel="stylesheet"  href="jquery.mobile.structure-1.1.0.css" />
+    <link rel="stylesheet"  href="jquery.mobile.theme-1.1.0.css" />
+    
+    
+    <script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+    <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="jquery.mobile-1.1.0.js" type="text/javascript"></script>
+	<script src="local:///chrome/webworks.js" type="text/javascript"></script>
+	
+	<script>
+    document.addEventListener("tizenhwkey", function(e) {
+
+console.log('Tizen HW Event!');
+
+//var activePage = $.mobile.activePage().attr("id"); // read current page
+
+switch(e.keyName)
+
+{
+case 'back':
+console.log("Back button pressed. Exiting Application");
+tizen.application.getCurrentApplication().exit();
+break;
+
+case 'menu':
+console.log("Menu button not yet supported.");
+break;
+default:
+console.log('Not supported.');
+}
+
+});
+</script>
+    
+</head>
+<body> 
+
+<div data-role="page" id="home">
+	<div data-role="header" data-position="fixed">
+        <h1>Indian Cinema </h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h1>Menu</h1>
+       <a href="#start" data-role="button" data-icon="arrow-r" data-transition="flip">Start Quiz</a>
+       
+       <a href="#contact" data-role="button" data-icon="grid" data-transition="flip">Contact Us</a>
+       
+	</div><!-- /content -->
+
+    <div class="ui-footer ui-bar-a" data-position="fixed" data-role="footer">
+       <h4></h4>
+    </div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="start">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+           
+  
+<!--   <div data-role="content">	
+		
+		<ul data-role="listview">
+        <li><a href="#q1">Multiple Choice</a></li>
+			
+		</ul>   
+	</div>
+
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><
+</div>
+
+
+<div data-role="page" id="q1">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+--> 
+        <h1>Question 1</h1>
+        <a href="#q2" data-role="button" data-icon="arrow-r">Skip</a>
+    </div>
+	<div data-role="content">	
+		<p>In which year did commercial cinema begin in India?</p>
+		<a href="#dq1" data-role="button" data-transition="pop" data-rel="dialog">1901</a>
+		<a href="#q2" data-role="button" data-transition="flip" > 1913</a>
+		<a href="#dq1" data-role="button" data-transition="pop" data-rel="dialog">1924</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq1">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:  1913</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q2" data-role="button" data-icon="arrow-r">next</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q2">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 2</h1>
+        <a href="#q3" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		 <p> Which is India's first Colour film?</p>	
+			
+			<a href="#dq2" data-role="button" data-transition="pop" data-rel="dialog">Alam Aara</a>
+			<a href="#dq2" data-role="button" data-transition="pop" data-rel="dialog">Mother India</a>
+			<a href="#q3" data-role="button" data-transition="flip" > Kisan Kanya</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq2">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:  Kisan Kanya</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q3" data-role="button" data-icon="arrow-r">next</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q3">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 3</h1>
+        <a href="#q4" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Which was the first Indian talkie movie to be released ?</p>
+		<a href="#q4" data-role="button" data-transition="flip" >Alam Ara</a>  
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog"><span>Raja Harishchandra<br/></span></a>
+		
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog">Indrasabha</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq3">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:Alam Ara</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q4" data-role="button" data-icon="arrow-r">next</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q4">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 4</h1>
+        <a href="#q5" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p> Which was the first monochrome film to be fully converted into colour in 2004?  </p>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Sahib Biwi Aur Gulam</a>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Naya Daur</a>
+		<a href="#q5" data-role="button" data-transition="flip" >Mughal-e-Azam</a>
+		
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq4">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Mughal-e-Azam</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q5" data-role="button" data-icon="arrow-r">next</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q5">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 5</h1>
+        <a href="#q6" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Which playback singer has been awarded the Bharat Ratna, the nation's highest civilian honour?</p>
+		<a href="#dq5" data-role="button" data-transition="pop" data-rel="dialog">Kishore Kumar</a>
+		<a href="#dq5" data-role="button" data-transition="pop" data-rel="dialog">Mohd.Rafi</a>
+
+		<a href="#q6" data-role="button" data-transition="pop" >Lata Mangeshkar</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq5">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:Lata Mangeshkar</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q6" data-role="button" data-icon="arrow-r">next</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q6">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 6</h1>
+        <a href="#q7" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>'Prem Rog' a movie directed by Raj Kapoor is based on which social cause?</p>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">Dowry</a>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">Casteism</a>
+		<a href="#q7" data-role="button" data-transition="flip">Widow-remarriage</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq6">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Widow-remarriage</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q7" data-role="button" data-icon="arrow-r">next</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q7">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 7</h1>
+        <a href="#q8" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Which was the first Hindi Movie to receive the national award?</p>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog"> Do Aankhen Barah Haath</a>
+		<a href="#q8" data-role="button" data-transition="flip" > Mirza Ghalib</a>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog">Kabuliwala</a>
+		
+		
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq7">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:Mirza Ghalib</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q8" data-role="button" data-icon="arrow-r">next</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q8">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 8</h1>
+        <a href="#q9" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Which music director brought Indian classical music into the film medium?</p>
+		<a href="#q9" data-role="button" data-transition="flip" >Naushad</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog">Saleel Chaudhary</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog">S.D.Burman</a>
+			
+			
+			
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq8">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Naushad</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q9" data-role="button" data-icon="arrow-r">next</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q9">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 9</h1>
+        <a href="#q10" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p> Which Indian movie gained entry into Hollywood's Oscar Awards in 2003?</p>
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog">Dil Chahta hai</a>
+			<a href="#q10" data-role="button" data-transition="flip" >Devdas</a>
+			
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog"> Ashoka</a>
+			
+			
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq9">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:Devdas</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q10" data-role="button" data-icon="arrow-r">next</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q10">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 10</h1>
+        <a href="#d2q25" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Who is the only Indian to have won an Oscar for Lifetime achievement in films?</p>
+			<a href="#dq10" data-role="button" data-transition="pop" data-rel="dialog">Raj Kapoor</a>
+			<a href="#dq10" data-role="button" data-transition="pop" data-rel="dialog">V Shantaram</a>
+			<a href="#d2q25" data-role="button" data-transition="flip" >Satyajit Ray</a>			  
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq10">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Satyajit Ray</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="d2q25">
+	<div data-role="header" data-position="fixed">
+        <h1>Quiz Over</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>You have reached the End of the quiz</h3>
+		<p>Thanx for playing</p> 
+		<a href="#home" data-role="button" data-icon="home">Home</a>		
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="contact">
+	<div data-role="header" data-position="fixed">
+	<a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>bkrockx@gmail.com</h1>
+    </div><!-- /header -->
+	<center><h4> you can contact us at </h4><b>bkrockx@gmail.com</b><h4>for any kind of queries & feedback
+	<br><br>It will help us greatly in improving our App.</h4>
+	<center>
+</div>
+
+
+</body>
+</html>
+

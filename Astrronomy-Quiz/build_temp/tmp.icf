@@ -1,0 +1,19 @@
+# comments and whitespace stripped by deployment tool
+[Trace]
+WEBMARMALADE = 1
+[Web]
+WebStartURL = "index.html"
+WebRootDirectory = "webassets"
+[S3E]
+AndroidHandleVol = 1
+AndroidWebViewAPIEnable = 1
+AndroidWebViewKeyboardProtect = 1
+FileUseCase = 1
+MemSize = 67108864
+HideTimerBackwardsMessage = 1
+DispFixRot=FixedPortrait
+[WebView]
+KeyboardForWebview=1
+[s3e]
+SysAppVersion=0.0.1
+SysAppCaption="Indian_Bollywood_Quiz"

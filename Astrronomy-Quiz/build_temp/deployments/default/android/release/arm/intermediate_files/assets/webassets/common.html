@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="user-scalable=no,width=device-width" />
+
+	<title>Common Wealth Quiz</title>
+
+	<link rel="stylesheet"  href="jquery.mobile-1.1.0.css" />
+    <link rel="stylesheet"  href="jquery.mobile.structure-1.1.0.css" />
+    <link rel="stylesheet"  href="jquery.mobile.theme-1.1.0.css" />
+    
+    
+    <script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+    <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="jquery.mobile-1.1.0.js" type="text/javascript"></script>
+	<script src="local:///chrome/webworks.js" type="text/javascript"></script>
+    
+</head>
+<body> 
+
+<div data-role="page" id="home">
+	<div data-role="header" data-position="fixed">
+        <h1>Common Wealth Quiz</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h1>Menu</h1>
+       <a href="#start" data-role="button" data-icon="arrow-r" data-transition="flip">Start Quiz</a>
+       
+       <a href="#contact" data-role="button" data-icon="grid" data-transition="flip">Contact Us</a>
+       
+	</div><!-- /content -->
+
+    <div class="ui-footer ui-bar-a" data-position="fixed" data-role="footer">
+       <h4></h4>
+    </div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="start">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+           
+  
+<!--   <div data-role="content">	
+		
+		<ul data-role="listview">
+        <li><a href="#q1">Multiple Choice</a></li>
+			
+		</ul>   
+	</div>
+
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><
+</div>
+
+
+<div data-role="page" id="q1">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+--> 
+        <h1>Question 1</h1>
+        <a href="#q2" data-role="button" data-icon="arrow-r">Skip</a>
+    </div>
+	<div data-role="content">	
+		<p>Which was the opening date of Commonwealth Games 2010?</p>
+		<a href="#dq1" data-role="button" data-transition="pop" data-rel="dialog">1 March 2010</a>
+		<a href="#q2" data-role="button" data-transition="flip" >3 October 2010</a>
+		<a href="#dq1" data-role="button" data-transition="pop" data-rel="dialog">2 October 2010</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq1">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: 6</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q2" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q2">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 2</h1>
+        <a href="#q3" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		 <p>Who won gold medal in men’s singles in tennis in Commonwealth Games 2010?</p>	
+			
+			<a href="#dq2" data-role="button" data-transition="pop" data-rel="dialog">Rohan Bopanna</a>
+			<a href="#dq2" data-role="button" data-transition="pop" data-rel="dialog">Mahesh Bhupati</a>
+			<a href="#q3" data-role="button" data-transition="flip" >Somdev Devvarman</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq2">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Norman Pritchard</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q3" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q3">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 3</h1>
+        <a href="#q4" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Where were Commonwealth Games 2010 held?</p>
+		<a href="#q4" data-role="button" data-transition="flip" >Delhi</a>  
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog"><span>Kuala Lumpur<br/></span></a>
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog">Pretoria</a>
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog">London</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq3">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:Michael Phelps</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q4" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q4">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 4</h1>
+        <a href="#q5" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Who won silver medal in women’s singles in tennis in Commonwealth Games 2010?</p>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Sally Peers</a>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Rashmi Chakravarti</a>
+		<a href="#q5" data-role="button" data-transition="flip" >Sania Mirza</a>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Sharleen Stratton</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq4">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Juan Martin del Potro</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q5" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q5">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 5</h1>
+        <a href="#q6" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Who won gold medal in women’s high jump in Commonwealth Games 2010?</p>
+		<a href="#dq5" data-role="button" data-transition="pop" data-rel="dialog">Latoya Francis</a>
+		<a href="#dq5" data-role="button" data-transition="pop" data-rel="dialog">Jennifer Abel</a>
+
+		<a href="#q6" data-role="button" data-transition="pop" > Nicole Forrester</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq5">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Men's Double Trap</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q6" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q6">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 6</h1>
+        <a href="#q7" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p> Who won gold medal in women’s long jump in Commonwealth Games 2010?</p>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">Jaele Patrick</a>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">Prajusha Malliakal</a>
+		<a href="#q7" data-role="button" data-transition="flip">Alice Falaiye</a>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">Tabia Charles</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq6">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: 43</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q7" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q7">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 7</h1>
+        <a href="#q8" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Who won gold medal in men’s individual recurve event in Commonwealth Games 2010?</p>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog">Jason Lyon</a>
+		<a href="#q8" data-role="button" data-transition="flip" >Rahul Banerjee</a>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog">Jayanta Talukdar</a>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog">Soumyadeep Roy</a>
+		
+		
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq7">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: United States</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q8" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q8">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 8</h1>
+        <a href="#q9" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Who won gold medal in women’s individual recurve event in Commonwealth Games 2010?</p>
+		<a href="#q9" data-role="button" data-transition="flip" >Deepika Kumari</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog">Susan Egelstaff</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog"> Dola Banerjee</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog">Alison Jane Williamson</a>
+			
+			
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq8">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: 1894 </h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q9" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q9">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 9</h1>
+        <a href="#q10" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>In which event, for men Jared Tallent won gold medal and for women Claire Tallent won silver medal, in Commonwealth Games 2010?</p>
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog">Badminton</a>
+			<a href="#q10" data-role="button" data-transition="flip" >20km walk</a>
+			
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog">Table Tannis</a>
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog">Rifle shooting</a>
+			
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq9">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Switzerland</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q10" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q10">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 10</h1>
+        <a href="#d2q25" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Who won gold medal in men’s 50m freestyle swimming in Commonwealth Games 2010?</p>
+			<a href="#dq10" data-role="button" data-transition="pop" data-rel="dialog"> Abraham Louw</a>
+			<a href="#dq10" data-role="button" data-transition="pop" data-rel="dialog">Roland Schoeman</a>
+			<a href="#d2q25" data-role="button" data-transition="flip" >Matthew Hayden</a>			  
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq10">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Pierre de Coubertin</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="d2q25">
+	<div data-role="header" data-position="fixed">
+        <h1>Quiz Over</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>You have reached the End of the quiz</h3>
+		<p>Thanx for playing</p> 
+		<a href="#home" data-role="button" data-icon="home">Home</a>		
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="contact">
+	<div data-role="header" data-position="fixed">
+	<a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>harshit080@gmail.com</h1>
+    </div><!-- /header -->
+	<center><h4> you can contact us at </h4><b>harshit080@gmail.com</b><h4>for any kind of queries & feedback
+	<br><br>It will help us greatly in improving our App.</h4>
+	<center>
+</div>
+
+
+</body>
+</html>
+

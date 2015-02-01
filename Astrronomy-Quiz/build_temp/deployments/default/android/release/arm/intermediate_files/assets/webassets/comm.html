@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="user-scalable=no,width=device-width" />
+
+	<title>Olympics Quiz</title>
+
+	<link rel="stylesheet"  href="jquery.mobile-1.1.0.css" />
+    <link rel="stylesheet"  href="jquery.mobile.structure-1.1.0.css" />
+    <link rel="stylesheet"  href="jquery.mobile.theme-1.1.0.css" />
+    
+    
+    <script type="text/javascript" charset="utf-8" src="cordova-1.7.0.js"></script>
+    <script src="jquery-1.7.2.min.js" type="text/javascript"></script>
+	<script src="jquery.mobile-1.1.0.js" type="text/javascript"></script>
+	<script src="local:///chrome/webworks.js" type="text/javascript"></script>
+    
+</head>
+<body> 
+
+<div data-role="page" id="home">
+	<div data-role="header" data-position="fixed">
+        <h1>Olympic Quiz</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h1>Menu</h1>
+       <a href="#start" data-role="button" data-icon="arrow-r" data-transition="flip">Start Quiz</a>
+       
+       <a href="#contact" data-role="button" data-icon="grid" data-transition="flip">Contact Us</a>
+       
+	</div><!-- /content -->
+
+    <div class="ui-footer ui-bar-a" data-position="fixed" data-role="footer">
+       <h4></h4>
+    </div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="start">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+           
+  
+<!--   <div data-role="content">	
+		
+		<ul data-role="listview">
+        <li><a href="#q1">Multiple Choice</a></li>
+			
+		</ul>   
+	</div>
+
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><
+</div>
+
+
+<div data-role="page" id="q1">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+--> 
+        <h1>Question 1</h1>
+        <a href="#q2" data-role="button" data-icon="arrow-r">Skip</a>
+    </div>
+	<div data-role="content">	
+		<p>Which country was Tom Cruise filming in when Katie Holmes filed for divorce?</p>
+		<a href="#dq1" data-role="button" data-transition="pop" data-rel="dialog">France</a>
+		<a href="#q2" data-role="button" data-transition="flip" >Iceland</a>
+		<a href="#dq1" data-role="button" data-transition="pop" data-rel="dialog">Canada</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq1">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Iceland</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q2" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q2">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 2</h1>
+        <a href="#q3" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		 <p> In August, actress Jennifer Aniston got engaged to Justin Theroux, her co-star in which movie?</p>	
+			
+			<a href="#dq2" data-role="button" data-transition="pop" data-rel="dialog">Horrible Bosses</a>
+			<a href="#dq2" data-role="button" data-transition="pop" data-rel="dialog">He's Just Not That Into You</a>
+			<a href="#q3" data-role="button" data-transition="flip" >Wanderlust</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq2">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Wonderlust</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q3" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q3">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 3</h1>
+        <a href="#q4" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Saucy summer blockbuster Magic Mike was based on which actor's real-life experiences as a stripper?</p>
+		<a href="#q4" data-role="button" data-transition="flip" >Channing Tatum</a>  
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog"><span> Matthew McConaughey<br/></span></a>
+		
+		<a href="#dq3" data-role="button" data-transition="pop" data-rel="dialog">Joe Manganiello</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq3">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:Channing Tatum</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q4" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q4">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 4</h1>
+        <a href="#q5" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Which celebrity couple got married in 2012 without first getting engaged?</p>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Anne Hathaway and Adam Shulman</a>
+		<a href="#dq4" data-role="button" data-transition="pop" data-rel="dialog">Natalie Portman and Benjamin Millepied</a>
+		<a href="#q5" data-role="button" data-transition="flip" >Blake Lively and Ryan Reynolds</a>
+		
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq4">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Blake Lively and Ryan Reynolds</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q5" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q5">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 5</h1>
+        <a href="#q6" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Actress Kristin Chenoweth was critically injured on the set of which hit U.S. TV show last summer?</p>
+		<a href="#dq5" data-role="button" data-transition="pop" data-rel="dialog">Hot in Cleveland</a>
+		<a href="#dq5" data-role="button" data-transition="pop" data-rel="dialog">Glee</a>
+
+		<a href="#q6" data-role="button" data-transition="pop" >The Good Wife</a>
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq5">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:The Good Wife</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q6" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q6">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 6</h1>
+        <a href="#q7" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p> HWhat is the name of the actor Sienna Miller welcomed her first child with in 2012?</p>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">Jude Law</a>
+		<a href="#dq6" data-role="button" data-transition="pop" data-rel="dialog">Rhys Ifans</a>
+		<a href="#q7" data-role="button" data-transition="flip">Tom Sturridge</a>
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq6">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Tom Sturridge</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q7" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q7">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 7</h1>
+        <a href="#q8" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Which actress despaired that she 'looked like her gay brother' after an extreme transformation for a movie role?</p>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog"> Penelope Cruz</a>
+		<a href="#q8" data-role="button" data-transition="flip" > Anne Hathaway</a>
+		<a href="#dq7" data-role="button" data-transition="pop" data-rel="dialog">Jennifer Lawrence</a>
+		
+		
+		
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq7">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is:  Anne Hathaway</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q8" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q8">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 8</h1>
+        <a href="#q9" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Which actress named her new baby daughter Rosalind Arusha Arkadina Altalune Florence?</p>
+		<a href="#q9" data-role="button" data-transition="flip" >Uma Thurman</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog">Tina Fey</a>
+			<a href="#dq8" data-role="button" data-transition="pop" data-rel="dialog">Jemima Kirke</a>
+			
+			
+			
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq8">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Uma Thurman </h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q9" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q9">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 9</h1>
+        <a href="#q10" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>Which TV legend was laid to rest four months after losing his battle with cancer?</p>
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog">Dick Clark</a>
+			<a href="#q10" data-role="button" data-transition="flip" >Sherman Hemsley</a>
+			
+			<a href="#dq9" data-role="button" data-transition="pop" data-rel="dialog"> Larry Hagman</a>
+			
+			
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq9">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Sherman Hemsley</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+			<div class="ui-block-b"><a href="#q10" data-role="button" data-icon="arrow-r">Next Question</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+<div data-role="page" id="q10">
+	<div data-role="header" data-position="fixed">
+        <a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>Question 10</h1>
+        <a href="#d2q25" data-role="button" data-icon="arrow-r">Skip</a>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<p>What is the name of the 2012 Bond movie?</p>
+			<a href="#dq10" data-role="button" data-transition="pop" data-rel="dialog">Skyscraper</a>
+			<a href="#dq10" data-role="button" data-transition="pop" data-rel="dialog"></a>
+			<a href="#d2q25" data-role="button" data-transition="flip" >Skyfall</a>			  
+	</div><!-- /content -->
+    <div class="ui-footer" data-position="fixed" data-role="footer">     
+        <h4></h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="dq10">
+	<div data-role="header" data-position="fixed">
+        <h1>Wrong Answer!</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>Sorry wrong Answer!</h3>
+		<h4>Correct answer is: Skyfall</h4> 
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a"><a href="#home" data-role="button" data-icon="home">Quit</a></div>
+		</fieldset>	
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="d2q25">
+	<div data-role="header" data-position="fixed">
+        <h1>Quiz Over</h1>
+    </div><!-- /header -->
+	<div data-role="content">	
+		<h3>You have reached the End of the quiz</h3>
+		<p>Thanx for playing</p> 
+		<a href="#home" data-role="button" data-icon="home">Home</a>		
+	</div><!-- /content -->
+</div><!-- /page -->
+
+
+
+<div data-role="page" id="contact">
+	<div data-role="header" data-position="fixed">
+	<a href="#home" data-role="button" data-icon="home">Home</a>
+        <h1>harshit080@gmail.com</h1>
+    </div><!-- /header -->
+	<center><h4> you can contact us at </h4><b>harshit080@gmail.com</b><h4>for any kind of queries & feedback
+	<br><br>It will help us greatly in improving our App.</h4>
+	<center>
+</div>
+
+
+</body>
+</html>
+
